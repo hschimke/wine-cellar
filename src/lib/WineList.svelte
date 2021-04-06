@@ -14,7 +14,7 @@
         {#each wines as wine}
             <ul>
                 <li>
-                    {wine.name}
+                    <a href="/wine/{wine.id}">{wine.name}</a>
                 </li>
             </ul>
         {/each}

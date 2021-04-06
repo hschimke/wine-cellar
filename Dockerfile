@@ -10,6 +10,6 @@ COPY . .
 
 RUN npm run build
 
-ENV NODE_ENV="production"
+ENV NODE_ENV="production" PORT=8080
 
 CMD ["node", "./build/app.js"]

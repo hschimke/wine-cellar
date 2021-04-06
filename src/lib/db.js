@@ -1,9 +1,11 @@
 import SequelizeLibrary from 'sequelize';
+import {config} from 'dotenv';
+
+config();
 
 const { Sequelize, DataTypes } = SequelizeLibrary;
 
-//const sequelize = new Sequelize(process.env.DATABASE_STRING !== undefined ? 'sqlite:./database-files/database.db' : process.env.DATABASE_STRING);
-const sequelize = new Sequelize('sqlite:./database-files/database.db');
+const sequelize = new Sequelize(process['env']['DATABASE_STRING']);
 
 const Wine = sequelize.define('Wine', {
     name: {
