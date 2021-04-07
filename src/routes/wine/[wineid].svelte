@@ -1,6 +1,6 @@
 <script context="module">
     export async function load({ page, fetch, session, context }) {
-        const url = `/wine/${page.params.wineid}.json`;
+        const url = `/api/wine/${page.params.wineid}/details.json`;
         const res = await fetch(url);
         if (res.ok) {
             return {

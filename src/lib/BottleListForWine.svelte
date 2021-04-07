@@ -5,7 +5,7 @@
     let bottles;
 
     onMount(async () => {
-        const response = await fetch(`/wine/${wine.id}/bottles.json`);
+        const response = await fetch(`/api/wine/${wine.id}/bottles.json`);
         bottles = (await response.json()).bottles;
     });
 

@@ -4,7 +4,7 @@
     let wines;
 
     onMount(async () => {
-        const response = await fetch(`/wines.json`);
+        const response = await fetch(`/api/wines.json`);
         wines = (await response.json()).wines;
     });
 </script>
