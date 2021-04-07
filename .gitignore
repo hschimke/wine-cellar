@@ -112,5 +112,5 @@ node_modules
 database-files
 notes
 
-test-data
+/test-data
 model_test.js
