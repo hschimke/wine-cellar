@@ -1,0 +1,38 @@
+<script>
+</script>
+
+<nav>
+    <ul>
+        <li>
+            <a href="/cellar">Cellar</a>
+        </li>
+    </ul>
+</nav>
+
+<style type="css">
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #fff;
+    }
+
+    li {
+        float: left;
+    }
+
+    li a {
+        display: block;
+        color: #000;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    /* Change the link color to #111 (black) on hover */
+    li a:hover {
+        background-color: #111;
+        color: #fff;
+    }
+</style>

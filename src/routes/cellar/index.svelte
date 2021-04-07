@@ -2,9 +2,9 @@
     import WineList from '$lib/WineList.svelte';
 </script>
 
-<css>
+<style>
 
-</css>
+</style>
 
 <main>
     <h2>Cellar</h2>

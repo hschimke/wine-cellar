@@ -18,6 +18,7 @@
             <ul>
                 <li>
                     <BottleDisplay {bottle} />
+                    <a href={`/bottle/${bottle.id}/`}>[link]</a>
                 </li>
             </ul>
         {/each}
@@ -26,4 +27,8 @@
     {/if}
 </div>
 
-<css />
+<style>
+    ul {
+        list-style: none;
+    }
+</style>

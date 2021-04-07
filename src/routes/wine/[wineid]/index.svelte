@@ -19,8 +19,8 @@
 
 <script>
     import BottleListForWine from "$lib/BottleListForWine.svelte";
-import WineDisplay from "$lib/WineDisplay.svelte";
-    
+    import WineDisplay from "$lib/WineDisplay.svelte";
+
     export let wine = undefined;
 </script>
 
