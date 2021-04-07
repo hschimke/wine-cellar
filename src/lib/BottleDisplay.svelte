@@ -10,6 +10,9 @@
     <span>{bottle.purchased_from}</span>
     <span>{bottle.consumed}</span>
     <span>{bottle.storage_location}</span>
+    {#if bottle.wine}
+        <WineDisplay wine={bottle.wine} />
+    {/if}
 </div>
 
 <style>
