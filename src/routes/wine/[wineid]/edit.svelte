@@ -18,14 +18,13 @@
 </script>
 
 <script>
-    import BottleListForWine from "$lib/BottleListForWine.svelte";
-    import WineDisplay from "$lib/WineDisplay.svelte";
+import WineForm from "$lib/WineForm.svelte";
 
-    export let wine = undefined;
+    export let wine;
 </script>
 
 <div>
-    <WineDisplay {wine} />
-    <a href={`/wine/${wine.id}/edit`}>[edit]</a>
-    <BottleListForWine {wine} />
+    <WineForm {wine} />
 </div>
+
+<style></style>

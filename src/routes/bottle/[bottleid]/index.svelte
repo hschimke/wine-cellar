@@ -1,5 +1,5 @@
 <script context="module">
-export async function load({ page, fetch, session, context }) {
+    export async function load({ page, fetch, session, context }) {
         const url = `/api/bottle/${page.params.bottleid}/details.json`;
         const res = await fetch(url);
         if (res.ok) {
@@ -18,15 +18,15 @@ export async function load({ page, fetch, session, context }) {
 </script>
 
 <script>
-import BottleDisplay from '$lib/BottleDisplay.svelte';
+    import BottleDisplay from "$lib/BottleDisplay.svelte";
 
     export let bottle = undefined;
 </script>
 
 <div>
     <BottleDisplay {bottle} />
+    <a href={`/bottle/${bottle.id}/edit`}>[edit]</a>
 </div>
 
 <style>
-
 </style>

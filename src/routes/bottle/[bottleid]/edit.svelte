@@ -1,11 +1,11 @@
 <script context="module">
     export async function load({ page, fetch, session, context }) {
-        const url = `/api/wine/${page.params.wineid}/details.json`;
+        const url = `/api/bottle/${page.params.bottleid}/details.json`;
         const res = await fetch(url);
         if (res.ok) {
             return {
                 props: {
-                    wine: (await res.json()).wine,
+                    bottle: (await res.json()).bottle,
                 },
             };
         }
@@ -18,14 +18,13 @@
 </script>
 
 <script>
-    import BottleListForWine from "$lib/BottleListForWine.svelte";
-    import WineDisplay from "$lib/WineDisplay.svelte";
+    import BottleForm from "$lib/BottleForm.svelte";
 
-    export let wine = undefined;
+    export let bottle;
 </script>
 
 <div>
-    <WineDisplay {wine} />
-    <a href={`/wine/${wine.id}/edit`}>[edit]</a>
-    <BottleListForWine {wine} />
+    <BottleForm {bottle} />
 </div>
+
+<style></style>
