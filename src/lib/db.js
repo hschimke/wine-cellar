@@ -3,9 +3,11 @@ import {config} from 'dotenv';
 
 config();
 
-const { Sequelize, DataTypes } = SequelizeLibrary;
+const { Sequelize, DataTypes, Op } = SequelizeLibrary;
 
 const sequelize = new Sequelize(process['env']['DATABASE_STRING']);
+const sq_fn = sequelize.fn;
+const sq_col = sequelize.col;
 
 const Wine = sequelize.define('Wine', {
     name: {
@@ -167,4 +169,4 @@ async function getModel() {
     return context;
 }
 
-export { getModel };
+export { getModel, sq_fn, sq_col, Op };

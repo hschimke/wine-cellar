@@ -12,7 +12,6 @@
 
 <style>
     div {
-        border: 1px black solid;
         width: fit-content;
         padding: 10px;
     }

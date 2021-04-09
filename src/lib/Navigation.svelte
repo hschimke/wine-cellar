@@ -6,10 +6,13 @@
         <li>
             <a href="/cellar">Cellar</a>
         </li>
+        <li>
+            <a href="/locations">Locations</a>
+        </li>
     </ul>
 </nav>
 
-<style type="css">
+<style>
     ul {
         list-style-type: none;
         margin: 0;
