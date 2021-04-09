@@ -34,6 +34,9 @@ export async function post(request) {
     } else if (data.action === 'delete') {
         try{
             const wine = await Wine.findByPk(data.id);
+            for( const bottle of await wine.getBottles() ){
+                bottle.destroy();
+            }
             wine.destroy();
             status = 'deleted';
         }catch(e){
